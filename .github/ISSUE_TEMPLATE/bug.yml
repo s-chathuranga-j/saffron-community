@@ -1,0 +1,30 @@
+name: Bug report
+description: Something in Saffron is broken or behaves differently from the docs
+labels: [bug]
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where
+      options: [Runner (saffron-ai), VS Code extension, JetBrains plugin, Claude Code plugin, Website or docs]
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: Version, description: "`npx saffron --version`, or the extension / plugin version", placeholder: "0.7.1" }
+    validations: { required: true }
+  - type: input
+    id: env
+    attributes: { label: OS and browser engine, placeholder: "Windows 11, chromium" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: What you ran, what you expected, what you got. }
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes: { label: Scenario and output, description: "The scenario (or a cut-down one), the terminal output, and the scenario's entry from .saffron/reports/latest.json. Check for secrets first.", render: text }
+  - type: dropdown
+    id: mode
+    attributes:
+      label: When does it happen
+      options: [Recording (first run), Replay (cached run), Healing, Accepting or reviewing a proposal, Something else]

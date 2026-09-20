@@ -1,0 +1,14 @@
+name: Feature request
+description: Something Saffron should do, or do differently
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: The problem, description: What are you trying to test or do, and what gets in the way today? }
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes: { label: What you would like, description: "How it might look: a step wording, a CLI flag, a config key, a panel." }
+  - type: input
+    id: roadmap
+    attributes: { label: Already on the roadmap?, description: "https://saffron-ai.io/docs/roadmap : say which item if so, a +1 with your use case helps ranking." }
