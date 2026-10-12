@@ -1,11 +1,12 @@
 # Saffron community
 
 Bug reports, feature requests and questions for [Saffron](https://saffron-ai.io),
-the Gherkin test runner that records a scenario once with an AI agent and
-replays it in a real browser at zero tokens.
+which records each test scenario once with an AI agent and replays it in a
+real browser at zero tokens.
 
-This repository holds no source code. Saffron is free to use and closed
-source; this is where its users and its author talk.
+This repository holds no source code. Saffron is free to use, including
+commercially, under the [Saffron Free Use License](https://saffron-ai.io/docs/license),
+and the runner's source is closed; this is where its users and its author talk.
 
 | I want to | Go to |
 |---|---|
